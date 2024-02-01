@@ -1,4 +1,52 @@
 p {
-  text-decoration: underline;
-  color: blue;
+  font-size: 20px;
+}
+
+#paragraph_2 {
+  color: rgb(255, 136, 0);
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 30px;
+  background-color: #8d2121;
+}
+
+.paragraph_3 {
+  text-decoration: overline;
+  font-size: 10px;
+}
+
+.paragraph_4.p-bold {
+  text-decoration: line-through;
+}
+
+.nesting-name > p {
+  color: blueviolet;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.menu-item.li_1 {
+  font-style: italic;
+}
+
+#li_2 {
+  text-align: center;
+}
+
+[href="#"] {
+  color: red;
+}
+
+[href="https://itwiki.dev/front-end/css-reference#section-selectors"]
+{
+  font-size: 25px;
+  color: rgb(69, 69, 255);
+}
+
+.menu-item.li_5 {
+  font-weight: 700;
+  font-style: oblique;
+  color: cadetblue;
 }
