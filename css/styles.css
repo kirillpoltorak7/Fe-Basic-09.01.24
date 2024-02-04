@@ -1,0 +1,20 @@
+.title {
+  text-align: center;
+  color: #6fe223;
+}
+.cards__block {
+  text-align: center;
+}
+.cards__container {
+  display: inline-block;
+}
+.card {
+  border: 1px solid #000;
+  margin: 0 30px 30px 0;
+  /* Відступи між картками не знаю як по-іншому зробити */
+}
+.card__photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
