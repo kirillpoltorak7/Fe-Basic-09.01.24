@@ -1,17 +1,21 @@
+body {
+  background-color: #f5dede;
+}
 .title {
   text-align: center;
   color: #6fe223;
 }
 .cards__block {
   text-align: center;
-}
-.cards__container {
-  display: inline-block;
+  flex: 0 1 30%;
+  font-size: 0;
 }
 .card {
-  border: 1px solid #000;
   margin: 0 30px 30px 0;
-  /* Відступи між картками не знаю як по-іншому зробити */
+  display: inline-block;
+  background-color: #e0e0e0;
+  width: 31.333%;
+  font-size: 14px;
 }
 .card__photo {
   width: 150px;
