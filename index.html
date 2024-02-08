@@ -4,42 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Template Page</title>
+    <title>Homework_5</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="/" class="menu__item-link">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./pages/page.html" class="menu__item-link">Page</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1 class="title">Float</h1>
         </div>
     </header>
     <main>
         <section>
-            <div class="container">
-                <!-- Content -->
-                <h1 class="title">Home</h1>
-                <div>
-                    <img src="./images/Placehold.svg" alt="Placehold">
+            <div class="container"> <!-- Обмежувальний контейнер -->
+                <div class="box"> <!-- Батько -->
+                    <div class="block">
+                        <p class="number">1</p>
+                        <p class="number">2</p>
+                    </div>
+                    <div class="block">
+                        <p class="number">1</p>
+                        <div class="number-block">
+                            <p class="mini-number">2</p>
+                            <p class="mini-number">3</p>
+                            <p class="mini-number">4</p>
+                            <p class="mini-number">5</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <p class="number">1</p>
+                        <p class="number">2</p>
+                        <div class="number-block">
+                            <p class="number">3</p>
+                            <p class="number">4</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <h2>Footer</h2>
-        </div>
-    </footer>
-    <script src="./js/main.js"></script>
 </body>
 
 </html>
