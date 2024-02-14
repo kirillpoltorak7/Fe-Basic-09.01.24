@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #eeeff1;
+}
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+/*-----------------------------------------MENU---------------------------------------------*/
+.nav {
+  padding-top: 79px;
+}
+.menu__item {
+  display: inline-block;
+}
+.menu__item-link {
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.menu__item:not(:last-of-type) {
+  margin-right: 42px;
+}
+
+.menu__item:first-child .menu__item-link {
+  color: #34547a;
+  font-weight: 500;
+}
+
+/*-----------------------------------------DESIGN---------------------------------------------*/
+
+.design {
+  background-color: #eeeff1;
+}
+.design-box {
+  padding-top: 151px;
+  padding-bottom: 141px;
+}
+.design-box__title {
+  font-size: 48px;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+.design-box__text {
+  color: #727272;
+  font-weight: 400;
+  margin-bottom: 65px;
+  max-width: 540px;
+}
+.design-box__btn {
+  padding: 20px 41px;
+  color: #ffffff;
+  background-color: #34547a;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/*-----------------------------------------ABOUT ME---------------------------------------------*/
+
+.about-me-box {
+  padding-top: 112px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.about-me__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+.about-me__text {
+  display: inline-block;
+  max-width: 540px;
+}
+
+/*-----------------------------------------PROJECTS---------------------------------------------*/
+.projects {
+  background-color: #34547a;
+}
+.projects-block {
+  padding: 100px 0;
+  text-align: center;
+}
+.projects-box {
+  display: inline-block;
+}
+.projects-box:not(:last-of-type) {
+  margin-right: 49px;
+}
+.projects-box__image {
+  display: inline-block;
+  width: 50px;
+  margin-right: 20px;
+}
+.projects-box__block-info {
+  display: inline-block;
+  color: #ffffff;
+}
+.projects-box__block-info__title {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*-----------------------------------------WORKFLOW---------------------------------------------*/
+.workflow {
+  background-color: #eeeff1;
+}
+.workflow-box {
+  text-align: center;
+  padding: 100px 0;
+}
+.workflow-box__title {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.workflow-box__text {
+  color: #727272;
+  display: inline-block;
+  max-width: 540px;
+}
+
+.workflow-box__video {
+  display: block;
+  margin: 57px 0 100px 0;
+  width: 1110px;
+  height: 600px;
+}
+
+/*-----------------------------------------FOOTER---------------------------------------------*/
+
+.footer {
+  background-color: #34547a;
+}
+.footer-box {
+  color: #ffffff;
+  padding: 50px 0;
+}
+.footer-box__title {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.footer-box__text {
+  font-size: 14px;
+}
