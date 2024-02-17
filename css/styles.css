@@ -69,6 +69,7 @@ body {
   background-color: #34547a;
   text-transform: uppercase;
   font-weight: 400;
+  min-width: 225px;
 }
 
 /*-----------------------------------------ABOUT ME---------------------------------------------*/
@@ -87,6 +88,7 @@ body {
 .about-me__text {
   display: inline-block;
   max-width: 540px;
+  color: #727272;
 }
 
 /*-----------------------------------------PROJECTS---------------------------------------------*/
