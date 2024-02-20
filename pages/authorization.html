@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Authorization</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Authorization</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="register-box">
+                    <h2 class="register-box__title">Авторизація</h2>
+                    <form action="https://fom.in.ua/echo" name="registration" method="get" autocomplete="on">
+                        <div class="register-box__mail">
+                            <input type="email" required name="email" placeholder="Введіть ваш e-mail" tabindex="1">
+                        </div>
+
+                        <div class="register-box__password">
+                            <input type="password" required name="password" placeholder="Введіть ваш пароль"
+                                tabindex="2" minlength="6" maxlength="8">
+                        </div>
+
+                        <div class="rememberpassword-block">
+                            <label for="rememberpassword">Запам'ятати пароль</label>
+                            <input type="checkbox" id="rememberpassword" tabindex="3">
+                        </div>
+                        <div class="register-box__buttons-box">
+                            <button type="submit" class="register-box__btn" tabindex="4">Увійти</button>
+                            <button type="reset" class="register-box__btn" tabindex="5">Скинути</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

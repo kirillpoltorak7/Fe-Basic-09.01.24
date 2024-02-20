@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  text-align: center;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+.header {
+  background-color: cadetblue;
+}
+.header__title {
+  padding: 50px 0;
+  font-size: 32px;
+  text-align: center;
+  color: #444444;
+}
+
+/*-----------------------------REGISTRATION-------------------------------------------*/
+
+.register-box {
+  padding: 20px 0;
+}
+.register-box__title {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.register-box__buttons-box {
+  margin-top: 10px;
+}
+
+/*--------------------------------AUTHORIZATION----------------------------------------*/
+
+.rememberpassword-block input {
+  margin: 0;
+}
+
+/*-----------------------------------SEARCH-------------------------------------*/
+.price-box,
+.year-box {
+  display: flex;
+  justify-content: center;
+}
+.search-box__title {
+  margin-bottom: 20px;
+}
+
+.price-from-block,
+.year-from-block {
+  margin-right: 10px;
+}
+
+select {
+  margin-bottom: 10px;
+}
