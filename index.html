@@ -5,41 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Template Page</title>
+    <title>Homework_8</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="/" class="menu__item-link">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./pages/page.html" class="menu__item-link">Page</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1 class="header__title">Таблиця:)</h1>
         </div>
     </header>
     <main>
-        <section>
+        <section class="table">
             <div class="container">
-                <!-- Content -->
-                <h1 class="title">Home</h1>
-                <div>
-                    <img src="./images/Placehold.svg" alt="Placehold">
+                <div class="table-box">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">My first table</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="first-row">
+                                <td>First cell</td>
+                                <td>Second cell</td>
+                                <td class="six-cells" colspan="2" rowspan="3">6 cells merged together</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">2 cells merged into one</td>
+                            </tr>
+                            <tr>
+                                <td>1st cell<br>3rd row</td>
+                                <td>2nd cell<br>3rd row</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Do you like tables?</td>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <h2>Footer</h2>
-        </div>
-    </footer>
-    <script src="./js/main.js"></script>
 </body>
 
 </html>
