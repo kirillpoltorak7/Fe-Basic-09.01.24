@@ -28,6 +28,7 @@ a {
 .menu {
   background-color: #333;
   text-align: left;
+  position: relative;
 }
 .menu__item {
   display: inline-block;
@@ -64,10 +65,12 @@ a {
   .menu2 {
     display: block;
     padding-top: 40px;
+    position: absolute;
   }
 }
 .menu2__link:hover {
-  color: #d4d4d4;
+  color: #0004ff;
+  font-weight: 900;
 }
 
 .menu3 {
@@ -82,5 +85,6 @@ a {
 }
 
 .menu3__link:hover {
-  color: #f0f0f0;
+  color: #ff0000;
+  font-weight: 900;
 }
