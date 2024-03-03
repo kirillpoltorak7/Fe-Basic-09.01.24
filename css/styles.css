@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "GraphikLCG-Semibold";
+  src: url(../fonts/Graphic/GraphikLCG-Semibold.woff) format("woff"),
+    url(../fonts/Graphic/GraphikLCG-Semibold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "GraphikLCG-Regular";
+  src: url(../fonts/Graphic/GraphikLCG-Regular.woff) format("woff"),
+    url(../fonts/Graphic/GraphikLCG-Regular.woff2) format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+:root {
+  --maxWidth: 1338px;
+  --primaryFamily: "Graphik LC TT", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --font-size: 20px;
+  --orange: #ff6336;
+  --whiteOrange: #ff9c7d;
+  --milk: #fff8e4;
+  --blue: #c9e8f2;
+  --brown: #dabc98;
+}
+html {
+  font-family: var(--primaryFamily);
+  font-size: var(--font-size);
+  color: #000;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: var(--maxWidth);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.header .container {
+  max-width: calc(var(--maxWidth) + 48px);
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 35px;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 30px;
+  line-height: 1.33;
+}
+
+h6 {
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.header {
+  border: 1px solid #ff0000;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side {
+  display: flex;
+}
+.logo-box {
+  border: 1px solid #ff0000;
+  margin-right: 51px;
+}
+.logo-link {
+}
+.logo-img {
+}
+.menu {
+  display: flex;
+  column-gap: 49.5px;
+  border: 1px solid #001aff;
+}
+.menu__item {
+  border: 1px solid #ff0000;
+}
+.menu__item-link {
+}
+.rigth-side {
+}
+.orange-btn {
+  background-color: var(--orange);
+  color: #fff;
+  margin-left: 4px;
+}
+
+/* Сделать button:focus, сделать тень при табе. Убрать border для button и outline none(разобраться вообще с этим) */
+
+.button {
+  font-size: 16px;
+  line-height: 2.81;
+  font-weight: 600;
+  padding-left: 36px;
+  padding-right: 36px;
+  background-color: #fff;
+}
