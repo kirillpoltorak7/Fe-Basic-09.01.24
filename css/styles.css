@@ -666,10 +666,10 @@ button {
 }
 .boosts-block__cards-block {
   display: flex;
-  /* justify-content: center; */
   align-items: baseline;
   column-gap: 20px;
   flex-wrap: wrap;
+  row-gap: 50px;
 }
 .boosts-block__title {
   text-align: center;
@@ -719,6 +719,12 @@ button {
   .boosts {
     padding-top: 70px;
     padding-bottom: 90px;
+  }
+  .boosts-block__cards-block {
+  text-align: center;
+  }
+  .boosts-block_card__text {
+  padding-right: 0;
   }
 }
 
@@ -779,6 +785,9 @@ button {
   }
   .quote-block {
     justify-content: center;
+  }
+  .quote-block__text-block {
+    text-align: center;
   }
 }
 
@@ -934,6 +943,7 @@ button {
   }
   .tools-block__title {
     font-size: 34px;
+    margin-bottom: 20px;
   }
   .tools-block__subtitle {
     margin-bottom: 65px;
@@ -999,7 +1009,7 @@ button {
     padding-bottom: 100px;
   }
   .trying-block__title {
-    font-size: 45px;
+    font-size: 34px;
   }
 }
 /*---------------------------------FOOTER----------------------------------------*/
@@ -1093,6 +1103,7 @@ button {
 
 .footer-block_bottom-side__left-part-text {
   max-width: 301px;
+  text-align: start;
 }
 
 .footer-block_bottom-side__right-part {
@@ -1136,11 +1147,42 @@ button {
   .footer-block_bottom-side__left-part {
     flex-wrap: wrap;
   }
-  .footer-block_bottom-side {
-    padding-top: 30px;
-  }
   .case-block__title {
     margin-bottom: 18px;
     font-size: 30px;
+  }
+  .footer-block_top-side {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-menu-block {
+    flex-basis: 100%;
+  }
+  .footer-mob-wrapper {
+    row-gap: 50px;
+  }
+  .footer-menu-title {
+  margin-bottom: 10px;
+  }
+  .footer-block_bottom-side {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .footer-block_bottom-side__left-part {
+    display: inline-block;
+  }
+  .footer-block_bottom-side {
+    display: block;
+    text-align: center;
+  }
+  .footer-block_bottom-side__left-part-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-block_bottom-side__right-part {
+    text-align: center;
+  }
+  .footer-block_bottom-side__left-part__logo-block {
+    margin-bottom: 20px;
   }
 }
