@@ -18,6 +18,17 @@
                             <img src="./images/Logo.webp" alt="Logo" class="logo-img">
                         </a>
                     </div>
+                    <div class="btn-wrapper">
+                        <button class="burger open-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="right-side">
                     <ul class="menu">
                         <li class="menu__item">
                             <a href="#" class="menu__item-link">Product</a>
@@ -35,12 +46,20 @@
                             <a href="#" class="menu__item-link">Resources</a>
                         </li>
                     </ul>
-                </div>
-                <div class="buttons-box right-side">
-                    <button type="button" class="button white-btn">Log in</button>
-                    <!-- В type повинно було б бути reset -->
-                    <button type="button" class="button orange-btn">Try it free</button>
-                    <!-- В type повинно було б бути submit -->
+                    <div class="buttons-box">
+                        <button type="button" class="button white-btn">Log in</button>
+                        <button type="button" class="button orange-btn">Try it free</button>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="burger close-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+
                 </div>
             </nav>
         </div>
@@ -58,9 +77,7 @@
                             teams. Embrace automation, workflow transparency, and fast project delivery.</p>
                         <div class="buttons-box">
                             <button type="button" class="button orange-btn">Try it free</button>
-                            <!-- В type повинно було б бути reset -->
                             <button type="button" class="button white-btn">Book a demo</button>
-                            <!-- В type повинно було б бути submit -->
                         </div>
                         <p class="localization-block_left-side__text">Try all features for 14 days · No credit card
                             required</p>
@@ -426,87 +443,90 @@
                         <p class="case-block__text">Riding towards global success with a 100% teammate enthusiasm</p>
                         <a href="#" class="case-block__link">Read more</a>
                     </div>
-                    <div class="footer-menu-block">
-                        <h6 class="footer-menu-title">Product</h6>
-                        <ul class="product-menu">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For
-                                    developers</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For managers</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For
-                                    translators</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For
-                                    designers</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Integrations</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Security</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Pricing</a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Automations</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu-block">
-                        <h6 class="footer-menu-title">Support</h6>
-                        <ul class="support-menu">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Contact</a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Documentation</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Status</a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Product
-                                    Updates</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">CLI Tool</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">API
-                                    Reference</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">iOS and Android
-                                    SDK</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Supported File
-                                    Formats</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu-block">
-                        <h6 class="footer-menu-title">Company</h6>
-                        <ul class="company-menu">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">About</a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Blog</a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Careers | We`re
-                                    Hiring</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Case Studies</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Media Kit</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu-block">
-                        <h6 class="footer-menu-title">Legal</h6>
-                        <ul class="legal-menu">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Terms of
-                                    Service</a>
-                            </li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Privacy Policy
-                                </a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Cookie Policy
-                                </a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Privacy Shield
-                                </a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">DPA</a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">List of
-                                    Sub-processors
-                                </a></li>
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Candidates
-                                    Privacy
-                                    Notice
-                                </a></li>
-                        </ul>
+                    <div class="footer-mob-wrapper">
+                        <div class="footer-menu-block">
+                            <h6 class="footer-menu-title">Product</h6>
+                            <ul class="product-menu">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For
+                                        developers</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For managers</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For
+                                        translators</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">For
+                                        designers</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Integrations</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Security</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Pricing</a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Automations</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu-block">
+                            <h6 class="footer-menu-title">Support</h6>
+                            <ul class="support-menu">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Contact</a></li>
+                                <li class="footer-menu-item"><a href="#"
+                                        class="footer-menu-item__link">Documentation</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Status</a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Product
+                                        Updates</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">CLI Tool</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">API
+                                        Reference</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">iOS and Android
+                                        SDK</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Supported File
+                                        Formats</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu-block">
+                            <h6 class="footer-menu-title">Company</h6>
+                            <ul class="company-menu">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">About</a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Blog</a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Careers | We`re
+                                        Hiring</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Case Studies</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Media Kit</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu-block">
+                            <h6 class="footer-menu-title">Legal</h6>
+                            <ul class="legal-menu">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Terms of
+                                        Service</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Privacy Policy
+                                    </a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Cookie Policy
+                                    </a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Privacy Shield
+                                    </a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">DPA</a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">List of
+                                        Sub-processors
+                                    </a></li>
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-item__link">Candidates
+                                        Privacy
+                                        Notice
+                                    </a></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
@@ -528,6 +548,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>
