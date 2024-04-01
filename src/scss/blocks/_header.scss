@@ -1,0 +1,20 @@
+.header {
+  background-color: lightcoral;
+  padding: 50px 0;
+
+  a {
+    font-weight: 600;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__nav {
+  @include tablet {
+    display: none;
+  }
+}
