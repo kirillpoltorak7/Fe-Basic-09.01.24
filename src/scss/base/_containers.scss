@@ -1,91 +1,130 @@
-/* Контейнери */
+// /* Контейнери */
+// .container {
+// 	margin-left:  auto;
+// 	margin-right: auto;
+// 	padding-left: var(--container-padding);
+// 	padding-right: var(--container-padding);
+
+// 	max-width: var(--container-width);
+// 	width: 100%;
+// }
+
+// .container-full {
+// 	padding-left: var(--container-padding);
+// 	padding-right: var(--container-padding);
+// 	max-width: 100%;
+// }
+
+// .container-left-50 {
+// 	padding-left: var(--container-padding);
+// 	padding-right: var(--container-padding);
+// 	max-width: 50%;
+
+// 	@include mobile {
+// 		max-width: 100%;
+// 	}
+// }
+
+// .container-right-50 {
+// 	padding-left: var(--container-padding);
+// 	padding-right: var(--container-padding);
+// 	max-width: 50%;
+// 	margin-left: auto;
+
+// 	@include mobile {
+// 		max-width: 100%;
+// 	}
+// }
+
+// .container-right {
+// 	padding-left: calc(
+// 		(100% - var(--container-width)) / 2 + var(--container-padding)
+// 	);
+
+// 	@include tablet {
+// 		padding-left: var(--container-padding);
+// 	}
+// }
+
+// .container-left {
+// 	padding-right: calc(
+// 		(100% - var(--container-width)) / 2 + var(--container-padding)
+// 	);
+
+// 	@include tablet {
+// 		padding-right: var(--container-padding);
+// 	}
+// }
+
+// .container-half-left {
+// 	padding-right: calc(
+// 		(100% - var(--container-width)) / 2 + (var(--container-width) / 2)
+// 	);
+// 	padding-left: calc(
+// 		(100% - var(--container-width)) / 2 + var(--container-padding)
+// 	);
+
+// 	@include tablet {
+// 		padding-left: var(--container-padding);
+// 	}
+
+// 	@include mobile {
+// 		padding: 0 var(--container-padding);
+// 	}
+// }
+
+// .container-half-right {
+// 	padding-left: calc(
+// 		(100% - var(--container-width)) / 2 + (var(--container-width) / 2)
+// 	);
+// 	padding-right: calc(
+// 		(100% - var(--container-width)) / 2 + var(--container-padding)
+// 	);
+
+// 	@include tablet {
+// 		padding-right: var(--container-padding);
+// 	}
+
+// 	@include mobile {
+// 		padding: 0 var(--container-padding);
+// 	}
+// }
+
 .container {
-	margin-left:  auto;
-	margin-right: auto;
-	padding-left: var(--container-padding);
-	padding-right: var(--container-padding);
-
-	max-width: var(--container-width);
-	width: 100%;
+  margin: 0 auto;
 }
 
-.container-full {
-	padding-left: var(--container-padding);
-	padding-right: var(--container-padding);
-	max-width: 100%;
+@media (max-width: 560px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 560px) {
+  .container {
+    max-width: 540px;
+  }
 }
 
-.container-left-50 {
-	padding-left: var(--container-padding);
-	padding-right: var(--container-padding);
-	max-width: 50%;
-
-	@include mobile {
-		max-width: 100%;
-	}
+@media (min-width: 768px) {
+  .container {
+    max-width: 648px;
+  }
 }
 
-.container-right-50 {
-	padding-left: var(--container-padding);
-	padding-right: var(--container-padding);
-	max-width: 50%;
-	margin-left: auto;
-
-	@include mobile {
-		max-width: 100%;
-	}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 904px;
+  }
 }
 
-.container-right {
-	padding-left: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
-
-	@include tablet {
-		padding-left: var(--container-padding);
-	}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
-.container-left {
-	padding-right: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
-
-	@include tablet {
-		padding-right: var(--container-padding);
-	}
-}
-
-.container-half-left {
-	padding-right: calc(
-		(100% - var(--container-width)) / 2 + (var(--container-width) / 2)
-	);
-	padding-left: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
-
-	@include tablet {
-		padding-left: var(--container-padding);
-	}
-
-	@include mobile {
-		padding: 0 var(--container-padding);
-	}
-}
-
-.container-half-right {
-	padding-left: calc(
-		(100% - var(--container-width)) / 2 + (var(--container-width) / 2)
-	);
-	padding-right: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
-
-	@include tablet {
-		padding-right: var(--container-padding);
-	}
-
-	@include mobile {
-		padding: 0 var(--container-padding);
-	}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1850px;
+  }
 }

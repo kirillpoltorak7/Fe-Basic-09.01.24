@@ -1,0 +1,52 @@
+.section-1 {
+  position: relative;
+
+  &__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    svg {
+    }
+  }
+
+  &__title {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: var(--basic-white);
+  }
+}
+
+.section-1__arrow {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 40px);
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #9999b2;
+  padding: 12px 10px 6px 10px;
+  color: var(--basic-white);
+  transition: 0.3s ease-in-out all;
+
+  svg {
+    transition: 0.3s ease-in-out all;
+  }
+
+  &:hover svg,
+  :focus svg,
+  :focus-visible svg {
+    transform: translateY(3px);
+    color: var(--accent);
+  }
+
+  &:hover,
+  :focus,
+  :focus-visible {
+    border: 1px solid var(--accent);
+  }
+}

@@ -1,18 +1,50 @@
 <header class="header">
     <div class="container">
         <div class="header__row">
-            <div class="logo">
-                <a href="#">LOGO</a>
+            <div class="header__logo">
+                <a href="#" class="logo__link"><img src="../../img/Logo.png" alt="Logo" class="logo__img"></a>
+            </div>
+            <div class="header__info info">
+                <div class="info__language language">
+                    <a href="#" class="language__link">УК</a>
+                    <a href="#" class="language__link">РУ</a>
+                    <a href="#" class="language__link language__link--active">EU</a>
+                </div>
+                <div class="info__street">
+                    <p class="info__text">Kyiv, Mechnikova str, 14/1</p>
+                </div>
+                <div class="info__number">
+                    <a href="tel:0800211927" class="info__numb">0800 211 927</a>
+                </div>
+                <div class="info__media">
+                    <svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1701)">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="currentColor" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1701">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
             </div>
             <nav class="header__nav nav">
                 <ul class="nav__list">
-                    <li><a href="index.html" class="active">Головна</a></li>
-                    <li><a href="example.html">Сторінка 2</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">services</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">team</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">publications</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
                 </ul>
             </nav>
-            <button class="mobile-nav-btn">
-                <span class="nav-icon"></span>
-            </button>
+            <div class="header__burger-wrapper">
+                <button class="mobile-nav-btn">
+                    <span class="nav-icon"></span>
+                </button>
+            </div>
         </div>
     </div>
 </header>

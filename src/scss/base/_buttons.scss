@@ -1,0 +1,29 @@
+.button {
+  color: white;
+  box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+  background-color: var(--active---regular);
+  border-radius: 12px;
+  padding: 18px 30px;
+  min-width: 120px;
+  transition: all 0.3s ease-in-out;
+
+  &[disabled] {
+    background-color: #ccc !important;
+    box-shadow: none !important;
+  }
+
+  &:focus {
+    outline-offset: 5px;
+    outline-width: 1px;
+    outline-style: solid;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+    background: var(--active---hover);
+  }
+
+  &:focus {
+    outline-color: var(--active---hover);
+  }
+}
