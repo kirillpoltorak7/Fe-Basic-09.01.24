@@ -94,6 +94,9 @@ gulp.task('html:prod', function () {
 		.pipe(changed('./prod/')) // Перевірка на зміни, щоб оптимізувати процес
 		.pipe(plumber(plumberNotify('HTML'))) // Обробка помилок без переривання потоку
 		.pipe(fileInclude(fileIncludeSetting)) // Вставка вмісту файлів (наприклад, шаблонів)
+		.pipe(replace(/(<picture[\s\S]*?<\/picture>)/gi, function (match) {
+			return match.replace(/(\.\.\/img\/[^"'\s]+)(\.(png|jpg|jpeg|gif))/g, '$1.webp');
+		}))
 		.pipe(
 			replace(
 				// Заміна відносних шляхів для засобів мультимедіа, щоб вони коректно працювали у продакшні

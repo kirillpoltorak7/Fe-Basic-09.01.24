@@ -6,10 +6,18 @@
   display: flex;
   align-items: center;
 }
-// .services__link {
-//   svg:hover {
-//   }
-// }
+
+.services__link {
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  :hover {
+    color: var(--accent);
+  }
+}
+
 .services__title {
   margin-bottom: 60px;
 }

@@ -2,7 +2,6 @@
   padding: 30px 0;
   font-size: 16px;
   background-color: var(--grey---bg-);
-  //   background-color: #ccc;
 }
 
 .footer__block {
@@ -70,11 +69,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: #24a3ff;
 }
-
-// .footer-contact__media-link svg:hover {
-//   fill: #ccc;
-// }
 
 .footer-contact__number {
   font-weight: 700;

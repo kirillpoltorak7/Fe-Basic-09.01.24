@@ -43,15 +43,31 @@ button {
 .bg-gradient {
   background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
   border-radius: 0 0 12px 12px;
+  position: relative;
+}
+
+.bg-gradient::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #e7e7f2;
+  border-radius: 0 0 12px 12px;
+  height: 10px;
+  width: calc(100% - 80px);
+  left: 40px;
+  top: 100%;
+  margin-top: 10px;
 }
 
 .bg-gradient::after {
   content: "";
   display: inline-block;
+  position: absolute;
   background-color: #cacadb;
   border-radius: 0 0 12px 12px;
   height: 10px;
   width: calc(100% - 40px);
+  left: 20px;
 }
 
 .title-gradient {
@@ -62,7 +78,7 @@ button {
   font-size: 38px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 559px) {
   .title-gradient {
     font-size: 30px;
   }

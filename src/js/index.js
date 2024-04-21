@@ -7,17 +7,14 @@ import 'swiper/css/bundle';
 mobileNav();
 tabs();
 
-const swiper = new Swiper('.swiper', {
 
-	// If we need pagination
+const swiper = new Swiper('.swiper-team', {
+	loop: true,
+
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true,
 	},
 
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
+	allowTouchMove: false,
 });

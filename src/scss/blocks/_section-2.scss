@@ -19,6 +19,7 @@
 }
 
 .thesises__link {
+  font-weight: 700;
   font-size: 38px;
   color: var(--grey---text);
   &:hover {
@@ -34,7 +35,6 @@
 
 .thesises__text {
   padding-left: 60px;
-  max-width: 581px;
   border-left: 4px solid rgba(255, 255, 255, 0.3);
 }
 .thesises__title {
@@ -48,6 +48,17 @@
   line-height: 1.58;
 }
 
+@media (min-width: 1440px) {
+  .thesises__menu {
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .thesises__text {
+    max-width: 861px;
+    border-left: 0;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   .thesises__menu {
     flex-grow: 1;
@@ -58,19 +69,90 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .thesises__menu {
-    max-width: 375px;
+@media (max-width: 1024px) {
+  .section-2__thesises {
+    flex-direction: column;
+    align-items: start;
   }
   .thesises__text {
-    max-width: 405px;
-    flex-grow: 0;
-    flex-shrink: 1;
+    padding-left: 0;
+    padding-top: 60px;
+    border: 0;
+  }
+  .thesises__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: unset;
+    width: calc(100vw - (100vw - 648px) / 2);
+    padding-right: 0;
+  }
+  .thesises__list {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    padding-bottom: 60px;
+  }
+
+  .thesises__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .thesises__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 767px) {
+  .thesises__list {
+    padding-bottom: 30px;
+  }
+  .thesises__text {
+    padding-top: 30px;
+  }
+  // .thesises__menu {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  //   max-width: unset;
+  //   width: calc(100vw - (100vw - 540px) / 2);
+  //   padding-right: 0;
+  // }
+}
+
+@media (min-width: 560px) and (max-width: 767px) {
+  .thesises__menu {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    // max-width: unset;
+    width: calc(100vw - (100vw - 540px) / 2);
+    // padding-right: 0;
+  }
+}
+
+@media (max-width: 559px) {
   .thesises__title {
     font-size: 20px;
+  }
+  .thesises__link {
+    font-size: 30px;
+  }
+  .thesises__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: unset;
+    width: 100%;
+    // width: calc(100vw;
+    padding-right: 0;
   }
 }

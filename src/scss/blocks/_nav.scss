@@ -9,6 +9,10 @@
   color: var(--basic-white);
 }
 
+.mobile-nav .nav__link:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 768px) {
   .nav__list {
     justify-content: start;

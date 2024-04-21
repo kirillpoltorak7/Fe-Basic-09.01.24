@@ -6,7 +6,16 @@
     justify-content: center;
     align-items: center;
     z-index: 0;
-    svg {
+    margin: 0 auto;
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      width: 74.115%;
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      width: 52.803%;
+    }
+    @media (min-width: 1920px) {
+      width: 54.5%;
     }
   }
 
@@ -19,6 +28,7 @@
     transform: translateY(-50%);
     z-index: 1;
     color: var(--basic-white);
+    padding: 0 30px;
   }
 }
 
