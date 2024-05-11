@@ -8,7 +8,18 @@ mobileNav();
 tabs();
 
 
-const swiper = new Swiper('.swiper-team', {
+const swiperTeam = new Swiper('.swiper-team', {
+	loop: true,
+
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	allowTouchMove: false,
+});
+
+const swiperAboutUs = new Swiper('.about-swiper', {
 	loop: true,
 
 	pagination: {

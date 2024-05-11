@@ -1,0 +1,139 @@
+.team-entry-body {
+  @media (max-width: 559px) {
+    .team-entry-header {
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+/*------------------------MAIN-------------------------------*/
+
+.team-entry__section-1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-entry__person-block {
+  display: flex;
+  column-gap: 60px;
+}
+
+.person {
+  &__image-box {
+    flex-grow: 1;
+    flex-shrink: 0;
+    img {
+      border-radius: 12px;
+    }
+  }
+
+  &__description-bottom-box {
+    border-top: 4px solid var(--grey---separator);
+    padding-top: 30px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__position {
+    font-size: 14px;
+    line-height: 1.57143;
+    color: var(--grey---text);
+  }
+
+  &__email::before {
+    content: "";
+    display: inline-block;
+    border-radius: 100%;
+    background-color: var(--grey---separator);
+    width: 6px;
+    height: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  &__linkedIn::before {
+    content: "";
+    display: inline-block;
+    border-radius: 100%;
+    background-color: var(--grey---separator);
+    width: 6px;
+    height: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  &__small-title {
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--main---regular);
+    margin-bottom: 15px;
+  }
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.625;
+    margin-bottom: 30px;
+  }
+}
+
+.person__text:last-child .person__paragraph {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1439px) {
+  .person__info {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 30px;
+    row-gap: 10px;
+  }
+
+  .person__email::before,
+  .person__linkedIn::before {
+    content: "";
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .team-entry__person-block {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .person__image-box {
+    flex-basis: 33.1858%;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .team-entry__section-1 {
+    .container {
+      max-width: 1080px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .team-entry__section-1 {
+    .container {
+      max-width: 1360px;
+    }
+  }
+  .person__image-box {
+    flex-basis: 29.4117%;
+  }
+}

@@ -1,4 +1,4 @@
-.swiper {
+.swiper-box .swiper {
   margin-top: 60px;
 }
 
@@ -52,6 +52,9 @@
 
 body .swiper-pagination {
   position: static;
+  span:hover {
+    background-color: var(--active---regular);
+  }
 }
 
 @media (max-width: 559px) {

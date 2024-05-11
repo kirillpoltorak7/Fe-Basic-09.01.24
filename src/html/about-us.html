@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About us</title>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-32x32.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="white-menu about-us">
+	<header class="team-header">
+		<div class="container">
+			<div class="header__row">
+				<div class="header__logo logo">
+					<ul class="logo__breadcrumb">
+						<li class="logo__item"><a href="../index.html" class="logo__link logo__link--small">
+								<picture>
+									<source srcset="../../img/mini-Logo(team).png" media="(max-width: 559px)">
+									<source srcset="../../img/Logo(team).png" media="(min-width: 560px)">
+									<img src="../../img/Logo(team).png" alt="Logo" class="logo__img">
+								</picture>
+							</a>
+						</li>
+						<li class="logo__item"><a href="#" class="logo__link-text">about us</a></li>
+					</ul>
+				</div>
+				<div class="header__info info">
+					<div class="info__language language">
+						<a href="#" class="language__link">УК</a>
+						<a href="#" class="language__link">РУ</a>
+						<a href="#" class="language__link language__link--active">EU</a>
+					</div>
+					<div class="info__street">
+						<p class="info__text">Kyiv, Mechnikova str, 14/1</p>
+					</div>
+					<div class="info__number">
+						<a href="tel:0800211927" class="info__numb">0800 211 927</a>
+					</div>
+					<div class="info__media">
+						<svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1_1701)">
+								<path
+									d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+									fill="currentColor" />
+							</g>
+							<defs>
+								<clipPath id="clip0_1_1701">
+									<rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</div>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="./about-us.html" class="nav__link nav__link--active">about us</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">services</a></li>
+						<li class="nav__item"><a href="./team.html" class="nav__link">team</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">publications</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+					</ul>
+				</nav>
+				<div class="header__burger-wrapper">
+					<button class="mobile-nav-btn">
+						<span class="nav-icon"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	@@include('./blocks/mobile-nav.html')
+	<main>
+		<section class="about-us__section-1">
+			<div class="container">
+				<div class="about-us-statistics statistics">
+					<div class="statistics__text">
+						<h2 class="statistics__title title-gradient">We turn over the idea of legal services</h2>
+						<p class="statistics__paragraph">Consolidating many years of experience and practice, the company's
+							lawyers accompany complex projects and achieve the adoption of a number of decisions that are
+							important for the industry. Many people form the practice of applying the law of the sea in
+							Ukraine.
+							<br>
+							<br>
+							HLEGAL is a reliable business partner, confirmed by stable cooperation with international law
+							firms, the trust of large Ukrainian and international companies, and the recognition of
+							professional ratings.
+						</p>
+					</div>
+					<div class="statistics__figures">
+						<div class="statistics__figures-box">
+							<div class="statistics__image-box">
+								<p class="statistics__img">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M27.1135 6.3054C26.9445 6.1374 26.7455 6.0529 26.5155 6.0529C26.401 6.0529 26.1595 6.1469 25.7925 6.3324C25.425 6.5184 25.035 6.7254 24.6245 6.9564C24.213 7.1859 23.726 7.3939 23.164 7.5799C22.6025 7.7654 22.0825 7.8594 21.604 7.8594C21.162 7.8594 20.772 7.7754 20.436 7.6069C19.3215 7.0849 18.352 6.6954 17.529 6.4384C16.706 6.1819 15.821 6.0529 14.8735 6.0529C13.2375 6.0529 11.374 6.5849 9.285 7.6469C8.854 7.8619 8.545 8.0284 8.345 8.1504L8.1465 6.6949C8.595 6.3054 8.8845 5.7379 8.8845 5.0974C8.8845 3.9239 7.9335 2.9729 6.76 2.9729C5.5865 2.9729 4.6355 3.9239 4.6355 5.0974C4.6355 5.8629 5.0445 6.5284 5.6515 6.9024L8.5215 27.9474C8.607 28.5739 9.143 29.0284 9.7585 29.0284C9.8145 29.0284 9.8715 29.0249 9.929 29.0174C10.613 28.9234 11.092 28.2939 10.9985 27.6099L9.845 19.1514C11.938 18.1129 13.7485 17.5894 15.2715 17.5894C15.918 17.5894 16.5485 17.6859 17.163 17.8809C17.778 18.0764 18.2895 18.2884 18.6965 18.5179C19.1035 18.7479 19.584 18.9609 20.1365 19.1549C20.69 19.3499 21.2365 19.4474 21.776 19.4474C23.139 19.4474 24.7715 18.9339 26.674 17.9074C26.913 17.7834 27.088 17.6614 27.1985 17.5419C27.309 17.4224 27.3645 17.2524 27.3645 17.0314V6.9029C27.3645 6.6734 27.281 6.4739 27.1135 6.3054Z"
+											fill="#F0145A" />
+									</svg>
+									10+
+								</p>
+								<p class="statistics__subtitle">years of relevant experience</p>
+							</div>
+							<div class="statistics__image-box">
+								<p class="statistics__img">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M17.232 18.332V17.774C17.232 17.0935 16.6805 16.542 16.0005 16.542C15.32 16.542 14.7685 17.0935 14.7685 17.774V18.332C14.7685 19.0125 15.32 19.564 16.0005 19.564C16.68 19.564 17.232 19.0125 17.232 18.332Z"
+											fill="#F0145A" />
+										<path
+											d="M18.077 19.0136C17.804 19.9071 16.9815 20.5631 16.0005 20.5631C15.019 20.5631 14.1965 19.9071 13.9235 19.0136H5.43904C4.90354 19.0136 4.39754 18.8891 3.94354 18.6731V24.3066C3.94354 25.4066 4.84354 26.3066 5.94354 26.3066H26.0565C27.1565 26.3066 28.0565 25.4066 28.0565 24.3066V18.6736C27.602 18.8896 27.0965 19.0141 26.561 19.0141H18.077V19.0136Z"
+											fill="#F0145A" />
+										<path
+											d="M26.4775 8.8976H21.677C21.387 7.0846 19.8165 5.6936 17.923 5.6936H14.0765C12.183 5.6936 10.613 7.0846 10.3225 8.8976H5.52253C4.37653 8.8976 3.43903 9.7976 3.43903 10.8976V15.5141C3.43903 16.6186 4.33453 17.5141 5.43903 17.5141H13.829C13.8575 16.9386 14.1045 16.4216 14.495 16.0476C14.507 16.0361 14.521 16.0271 14.5335 16.0161C14.62 15.9366 14.71 15.8616 14.8085 15.7966C14.8435 15.7731 14.8835 15.7571 14.92 15.7361C15.001 15.6896 15.081 15.6411 15.1685 15.6051C15.237 15.5766 15.311 15.5601 15.383 15.5386C15.445 15.5201 15.504 15.4956 15.5685 15.4826C15.708 15.4541 15.8525 15.4391 16 15.4391C16.148 15.4391 16.292 15.4546 16.4315 15.4826C16.4955 15.4956 16.5545 15.5201 16.6165 15.5386C16.6885 15.5601 16.7625 15.5766 16.831 15.6056C16.918 15.6416 16.9975 15.6896 17.0785 15.7361C17.1155 15.7576 17.1555 15.7736 17.191 15.7971C17.2895 15.8616 17.379 15.9366 17.4655 16.0161C17.478 16.0276 17.4925 16.0366 17.5045 16.0486C17.8955 16.4226 18.142 16.9396 18.1705 17.5151H26.5605C27.665 17.5151 28.5605 16.6196 28.5605 15.5151V10.8986C28.561 9.7976 27.6235 8.8976 26.4775 8.8976ZM12.248 8.8976C12.503 8.1271 13.2215 7.5656 14.0765 7.5656H17.923C18.778 7.5656 19.4965 8.1271 19.7515 8.8976H12.248Z"
+											fill="#F0145A" />
+									</svg>
+									30+
+								</p>
+								<p class="statistics__subtitle">active clients who entrust us with their orders on a monthly
+									basis
+								</p>
+							</div>
+							<div class="statistics__image-box">
+								<p class="statistics__img">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.097 3.55298C9.25252 3.55298 3.68402 9.12148 3.68402 15.966C3.68402 22.811 9.25252 28.38 16.097 28.38C22.9415 28.38 28.51 22.811 28.51 15.966C28.5105 9.12148 22.942 3.55298 16.097 3.55298ZM22.9555 15.0585V15.059L19.362 17.659L20.746 21.889C20.768 21.955 20.7795 22.0255 20.7795 22.0975C20.7795 22.467 20.4805 22.767 20.111 22.767C19.964 22.767 19.829 22.72 19.719 22.6405L16.0975 20.021L12.476 22.6405C12.366 22.72 12.231 22.767 12.0845 22.767C11.7145 22.767 11.415 22.4675 11.415 22.0975C11.415 22.025 11.427 21.955 11.449 21.889L12.8335 17.659L9.24002 15.059V15.0585C9.07202 14.9375 8.96302 14.74 8.96302 14.517C8.96302 14.1475 9.26202 13.8485 9.63202 13.8485H14.0805L15.458 9.63798C15.542 9.36448 15.7965 9.16548 16.098 9.16548C16.399 9.16548 16.654 9.36448 16.7375 9.63798L18.115 13.8485H22.5635C22.933 13.8485 23.2325 14.1475 23.2325 14.517C23.232 14.74 23.123 14.9375 22.9555 15.0585Z"
+											fill="#F0145A" />
+									</svg>
+									500+
+								</p>
+								<p class="statistics__subtitle">hours of pro bono work annually</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-us__section-2">
+			<div class="about-us__image-box">
+				<picture>
+					<source srcset="../img/about-us(min-w375).png" media="max-width: 767px">
+					<source srcset="../img/about-us(min-w768).png" media="min-width: 768px and max-width: 1023px">
+					<source srcset="../img/about-us(min-w1024).png" media="min-width: 1024px and max-width: 1439px">
+					<source srcset="../img/about-us(min-w1440).png" media="min-width: 1440px and max-width: 1919px">
+					<source srcset="../img/about-us(min-w1920).png" media="min-width: 1920px">
+					<img src="../img/about-us(min-w1920).png" alt="Image" class="about-us__img">
+				</picture>
+			</div>
+		</section>
+		<section class="about-us__section-3">
+			<div class="container">
+				<div class="about-us__quality quality">
+					<p class="quality__text">The historically unchanged legal profession has begun to reformat in recent
+						years. Clients are feeling this, but law firms are still resisting evolution. Clients need
+						convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the
+						technological revolution in legal services has begun and is imminent.
+						<br>
+						<br>
+						Quality is what we care about the most.
+						<br>
+						<br>
+						It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we
+						want our clients to trust us too.
+					</p>
+					<h2 class="quality__title title-gradient">Quality is what we care about the most.</h2>
+				</div>
+			</div>
+		</section>
+		<section class="about-us__section-4">
+			<div class="container">
+				<div class="swiper about-swiper">
+					<h4 class="about-swiper__title">achievements</h4>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-slide__wrapper">
+								<div class="about-swiper__img-box">
+									<img src="../img/legal500.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/red.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/lider.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/ulf.png" class="about-swiper__img"></img>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__wrapper">
+								<div class="about-swiper__img-box">
+									<img src="../img/legal500.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/red.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/lider.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/ulf.png" class="about-swiper__img"></img>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__wrapper">
+								<div class="about-swiper__img-box">
+									<img src="../img/legal500.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/red.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/lider.png" class="about-swiper__img"></img>
+								</div>
+								<div class="about-swiper__img-box">
+									<img src="../img/ulf.png" class="about-swiper__img"></img>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__block block-footer">
+				<div class="block-footer__location footer-location">
+					<p class="footer-location__street">Kyiv, Mechnikova str, 14/1</p>
+					<div class="footer-location__map">
+						<a href="#" class="footer-location__map-link">On map</a>
+					</div>
+				</div>
+				<div class="block-footer__contact footer-contact">
+					<div class="footer-contact__media">
+						<a href="#" class="footer-contact__media-link">
+							<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_142560_860)">
+									<path
+										d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+										fill="currentColor" />
+								</g>
+								<defs>
+									<clipPath id="clip0_142560_860">
+										<rect width="38" height="38" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+					<div class="footer-contact__number">
+						<a href="tel:0800211927" class="footer-contact__numb-link">0800 211 927</a>
+					</div>
+					<div class="footer-contact__email">
+						<a href="mailto:contact@forstudy.space" class="footer-contact__email-link">contact@forstudy.space</a>
+					</div>
+				</div>
+				<div class="block-footer__right-side footer-right">
+					<p class="footer-right__law">© 2021 HLEGAL Law company, LLC</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+<!-- <div class="swiper-wrapper">
+	<div class="swiper-slide">
+		<div class="about-swiper__images-box">
+			<div class="about-swiper__img-box">
+				<img src="../img/legal500.png" class="about-swiper__img"></img>
+			</div>
+			<div class="about-swiper__img-box">
+				<img src="../img/red.png" class="about-swiper__img"></img>
+			</div>
+		</div>
+		<div class="about-swiper__images-box">
+			<div class="about-swiper__img-box">
+				<img src="../img/lider.png" class="about-swiper__img"></img>
+			</div>
+			<div class="about-swiper__img-box">
+				<img src="../img/ulf.png" class="about-swiper__img"></img>
+			</div>
+		</div>
+	</div>
+	<div class="swiper-slide">
+		<div class="about-swiper__images-box">
+			<div class="about-swiper__img-box">
+				<img src="../img/legal500.png" class="about-swiper__img"></img>
+			</div>
+			<div class="about-swiper__img-box">
+				<img src="../img/red.png" class="about-swiper__img"></img>
+			</div>
+		</div>
+		<div class="about-swiper__images-box">
+			<div class="about-swiper__img-box">
+				<img src="../img/lider.png" class="about-swiper__img"></img>
+			</div>
+			<div class="about-swiper__img-box">
+				<img src="../img/ulf.png" class="about-swiper__img"></img>
+			</div>
+		</div>
+	</div>
+	<div class="swiper-slide">
+		<div class="about-swiper__images-box">
+			<div class="about-swiper__img-box">
+				<img src="../img/legal500.png" class="about-swiper__img"></img>
+			</div>
+			<div class="about-swiper__img-box">
+				<img src="../img/red.png" class="about-swiper__img"></img>
+			</div>
+		</div>
+		<div class="about-swiper__images-box">
+			<div class="about-swiper__img-box">
+				<img src="../img/lider.png" class="about-swiper__img"></img>
+			</div>
+			<div class="about-swiper__img-box">
+				<img src="../img/ulf.png" class="about-swiper__img"></img>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+</html>

@@ -85,14 +85,16 @@
   .posts__post {
     flex-basis: calc(50% - 30px);
   }
-  .posts__post:last-of-type {
-    flex-grow: 1;
-    .post__image-box img {
-      object-position: center;
-      object-fit: cover;
-      width: 100%;
-      height: 200px;
-      border-radius: 8px 8px 0 0;
+  .section-5 {
+    .posts__post:last-of-type {
+      flex-grow: 1;
+      .post__image-box img {
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 8px 8px 0 0;
+      }
     }
   }
 }
