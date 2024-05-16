@@ -6,6 +6,88 @@
     gap: 30px;
   }
 
+  .publications-section-1__checkbox {
+  }
+  .publications-section-1__checkbox {
+    text-align: center;
+    // padding-top: 90px;
+
+    input[type="checkbox"] {
+      width: 1px;
+      max-width: 1px;
+      height: 1px;
+      max-height: 1px;
+      opacity: 1;
+      visibility: hidden;
+      position: absolute;
+
+      + label {
+        position: relative;
+        user-select: none;
+        display: inline-block;
+        transition: 0.4s ease;
+        border-radius: 12px;
+        padding: 2px;
+        width: 233px;
+        height: 42px;
+        text-align: center;
+        color: var(--main---regular);
+        font-weight: 700;
+
+        &::before,
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+        }
+        &::before {
+          border-radius: 12px;
+          padding: 2px;
+          width: 233px;
+          height: 42px;
+          background-color: #e6e6f0;
+          display: inherit;
+          top: 0;
+          left: 0;
+        }
+
+        &::after {
+          content: "news";
+          border-radius: 10px;
+          padding: 8px 30px 10px 30px;
+          width: 105px;
+          height: 38px;
+          top: 2px;
+          left: 2px;
+          background-color: var(--basic-white);
+          transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 0.1);
+          // &:hover {
+          //   // background-color: var(--basic-white);
+          //   background-color: red;
+          // }
+        }
+      }
+      &:checked {
+        & + label::after {
+          content: "articles";
+          left: calc(100% - 125px);
+          border-radius: 10px;
+          padding: 8px 30px 10px 30px;
+          width: 122px;
+          height: 38px;
+          // &:hover {
+          //   background-color: var(--basic-white);
+          // }
+        }
+      }
+    }
+
+    .checkbox-box {
+    }
+    .mobileToggle {
+    }
+  }
+
   @media (max-width: 559px) {
     .publications-header {
       .container {

@@ -68,10 +68,11 @@
 				<nav class="header__nav nav">
 					<ul class="nav__list">
 						<li class="nav__item"><a href="./about-us.html" class="nav__link">about us</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">services</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">team</a></li>
-						<li class="nav__item"><a href="#" class="nav__link nav__link--active">publications</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+						<li class="nav__item"><a href="./services.html" class="nav__link">services</a></li>
+						<li class="nav__item"><a href="./team.html" class="nav__link">team</a></li>
+						<li class="nav__item"><a href="./publications.html"
+								class="nav__link nav__link--active">publications</a></li>
+						<li class="nav__item"><a href="./contact.html" class="nav__link">contact</a></li>
 					</ul>
 				</nav>
 				<div class="header__burger-wrapper">
@@ -82,13 +83,29 @@
 			</div>
 		</div>
 	</header>
+	@@include('./blocks/mobile-nav.html')
 	<main>
 		<section class="publications__section-1">
 			<div class="container">
+				<div class="publications-section-1__checkbox">
+					@@include('./blocks/checkbox.html')
+				</div>
 				<div class="articles__posts-block posts">
 					<div class="posts__post post">
 						<div class="post__image-box">
-							<img src="../../img/post_1.png" alt="Image" class="post__img">
+							<picture>
+								<source srcset="../../img/section-5/post_1(min-w375).png" media="(max-width: 559px)">
+								<source srcset="../../img/section-5/post_1(min-w768).png"
+									media="(min-width: 560px) and (max-width: 767px)">
+								<source srcset="../../img/section-5/post_1(min-w768).png"
+									media="(min-width: 768px) and (max-width: 1023px)">
+								<source srcset="../../img/section-5/post_1(min-w1024).png"
+									media="(min-width: 1024px) and (max-width: 1439px)">
+								<source srcset="../../img/section-5/post_1(min-w1440).png"
+									media="(min-width: 1440px) and (max-width: 1919px)">
+								<source srcset="../../img/section-5/post_1(min-w1920).png" media="(min-width: 1920px)">
+								<img src="../../img/post_1.png" alt="Image" class="post__img">
+							</picture>
 						</div>
 						<div class="post__text-box">
 							<div class="post__title-box">
@@ -102,11 +119,24 @@
 					</div>
 					<div class="posts__post post">
 						<div class="post__image-box">
-							<img src="../../img/post_2.png" alt="Image" class="post__img">
+							<picture>
+								<source srcset="../../img/section-5/post_2(min-w375).png" media="(max-width: 559px)">
+								<source srcset="../../img/section-5/post_2(min-w768).png"
+									media="(min-width: 560px) and (max-width: 767px)">
+								<source srcset="../../img/section-5/post_2(min-w768).png"
+									media="(min-width: 768px) and (max-width: 1023px)">
+								<source srcset="../../img/section-5/post_2(min-w1024).png"
+									media="(min-width: 1024px) and (max-width: 1439px)">
+								<source srcset="../../img/section-5/post_2(min-w1440).png"
+									media="(min-width: 1440px) and (max-width: 1919px)">
+								<source srcset="../../img/section-5/post_2(min-w1920).png" media="(min-width: 1920px)">
+								<img src="../../img/post_2.png" alt="Image" class="post__img">
+							</picture>
 						</div>
 						<div class="post__text-box">
 							<div class="post__title-box">
-								<a href="#" class="post__title-link">Penalty for the Good Corporation: what will happen to
+								<a href="./publications-entry.html" class="post__title-link">Penalty for the Good Corporation:
+									what will happen to
 									Google
 									and others for violating the GDPR</a>
 							</div>
@@ -117,7 +147,19 @@
 					</div>
 					<div class="posts__post post">
 						<div class="post__image-box">
-							<img src="../../img/post_3.png" alt="Image" class="post__img">
+							<picture>
+								<source srcset="../../img/section-5/post_3(min-w375).png" media="(max-width: 559px)">
+								<source srcset="../img/publications/publications_post-3(min-w768).png"
+									media="(min-width: 560px) and (max-width: 767px)">
+								<source srcset="../img/publications/publications_post-3(min-w768).png"
+									media="(min-width: 768px) and (max-width: 1023px)">
+								<source srcset="../../img/section-5/post_3(min-w1024).png"
+									media="(min-width: 1024px) and (max-width: 1439px)">
+								<source srcset="../../img/section-5/post_3(min-w1440).png"
+									media="(min-width: 1440px) and (max-width: 1919px)">
+								<source srcset="../../img/section-5/post_3(min-w1920).png" media="(min-width: 1920px)">
+								<img src="../../img/post_3.png" alt="Image" class="post__img">
+							</picture>
 						</div>
 						<div class="post__text-box">
 							<div class="post__title-box">
@@ -131,7 +173,21 @@
 					</div>
 					<div class="posts__post post">
 						<div class="post__image-box">
-							<img src="../../img/post_4.png" alt="Image" class="post__img">
+							<picture>
+								<source srcset="../img/publications/publications_post-4(min-w375).png"
+									media="(max-width: 559px)">
+								<source srcset="../img/publications/publications_post-4(min-w768).png"
+									media="(min-width: 560px) and (max-width: 767px)">
+								<source srcset="../img/publications/publications_post-4(min-w768).png"
+									media="(min-width: 768px) and (max-width: 1023px)">
+								<source srcset="../img/publications/publications_post-4(min-w1024).png"
+									media="(min-width: 1024px) and (max-width: 1439px)">
+								<source srcset="../img/publications/publications_post-4(min-w1440).png"
+									media="(min-width: 1440px) and (max-width: 1919px)">
+								<source srcset="../img/publications/publications_post-4(min-w1920).png"
+									media="(min-width: 1920px)">
+								<img src="../img/publications/publications_post-4(min-w1440).png" alt="Image" class="post__img">
+							</picture>
 						</div>
 						<div class="post__text-box">
 							<div class="post__title-box">
@@ -145,7 +201,21 @@
 					</div>
 					<div class="posts__post post">
 						<div class="post__image-box">
-							<img src="../../img/post_5.png" alt="Image" class="post__img">
+							<picture>
+								<source srcset="../img/publications/publications_post-5(min-w375).png"
+									media="(max-width: 559px)">
+								<source srcset="../img/publications/publications_post-5(min-w768).png"
+									media="(min-width: 560px) and (max-width: 767px)">
+								<source srcset="../img/publications/publications_post-5(min-w768).png"
+									media="(min-width: 768px) and (max-width: 1023px)">
+								<source srcset="../img/publications/publications_post-5(min-w1024).png"
+									media="(min-width: 1024px) and (max-width: 1439px)">
+								<source srcset="../img/publications/publications_post-5(min-w1440).png"
+									media="(min-width: 1440px) and (max-width: 1919px)">
+								<source srcset="../img/publications/publications_post-5(min-w1920).png"
+									media="(min-width: 1920px)">
+								<img src="../img/publications/publications_post-5(min-w1440).png" alt="Image" class="post__img">
+							</picture>
 						</div>
 						<div class="post__text-box">
 							<div class="post__title-box">
@@ -175,7 +245,6 @@
 			</div>
 		</section>
 	</main>
-	@@include('./blocks/mobile-nav.html')
 	@@include('blocks/footer.html')
 	<script src="./js/index.bundle.js"></script>
 </body>

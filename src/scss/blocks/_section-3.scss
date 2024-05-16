@@ -1,5 +1,23 @@
 .section-3 {
   padding-bottom: 60px;
+  .services__cards-block {
+    display: grid;
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 100%);
+      row-gap: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      grid-template-columns: repeat(2, calc(50% - 30px));
+      gap: 60px;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, calc(33.333% - 40px));
+      gap: 60px;
+    }
+  }
 }
 
 .services__link-wrapper {
@@ -21,34 +39,23 @@
 .services__title {
   margin-bottom: 60px;
 }
-.services__cards-block {
-  display: grid;
-
-  @media (max-width: 767px) {
-    grid-template-columns: repeat(1, 100%);
-    row-gap: 20px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    grid-template-columns: repeat(2, calc(50% - 30px));
-    gap: 60px;
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, calc(33.333% - 40px));
-    gap: 60px;
-  }
-}
 
 .card__image-box {
   display: inline-block;
   background-color: var(--basic-white);
   border-radius: 24px;
-  padding: 10px 14px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 6px;
+  padding-left: 14px;
   margin-bottom: 30px;
 }
+
 .card__title {
   color: var(--active---regular);
+  margin-bottom: 15px;
+}
+.card__title-link {
   margin-bottom: 15px;
 }
 

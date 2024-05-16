@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Team-entry</title>
+	<title>Team</title>
 	<link rel="stylesheet" href="./css/styles.css">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
@@ -15,10 +15,11 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="theme-color" content="#ffffff">
+
 </head>
 
-<body class="team-entry-body">
-	<header class="white-menu team-entry-header">
+<body class="white-menu contact-page">
+	<header class="contact-header">
 		<div class="container">
 			<div class="header__row">
 				<div class="header__logo logo">
@@ -31,7 +32,7 @@
 								</picture>
 							</a>
 						</li>
-						<li class="logo__item"><a href="#" class="logo__link-text">team</a></li>
+						<li class="logo__item"><a href="#" class="logo__link-text">contact</a></li>
 					</ul>
 				</div>
 				<div class="header__info info">
@@ -65,9 +66,9 @@
 					<ul class="nav__list">
 						<li class="nav__item"><a href="./about-us.html" class="nav__link">about us</a></li>
 						<li class="nav__item"><a href="./services.html" class="nav__link">services</a></li>
-						<li class="nav__item"><a href="./team.html" class="nav__link nav__link--active">team</a></li>
+						<li class="nav__item"><a href="./team.html" class="nav__link">team</a></li>
 						<li class="nav__item"><a href="./publications.html" class="nav__link">publications</a></li>
-						<li class="nav__item"><a href="./contact.html" class="nav__link">contact</a></li>
+						<li class="nav__item"><a href="#" class="nav__link nav__link--active">contact</a></li>
 					</ul>
 				</nav>
 				<div class="header__burger-wrapper">
@@ -78,66 +79,77 @@
 			</div>
 		</div>
 	</header>
-	@@include('../html/blocks/mobile-nav.html')
+	@@include('./blocks/mobile-nav.html')
 	<main>
-		<section class="team-entry__section-1">
+		<section class="contact__section-1 contact-section-1">
 			<div class="container">
-				<div class="team-entry__person-block person">
-					<div class="person__image-box">
-						<picture>
-							<source srcset="../img/team-entry/team-entry(min-w375).png" media="max-width: 559px">
-							<source srcset="../img/team-entry/team-entry(min-w768).png"
-								media="min-width: 560px and max-width: 767px">
-							<source srcset="../img/team-entry/team-entry(min-w1024).png"
-								media="min-width: 768px and max-width: 1023px">
-							<source srcset="../img/team-entry/team-entry(min-w1024).png"
-								media="min-width: 1024px and max-width: 1439px">
-							<source srcset="../img/team-entry/team-entry(min-w1440).png"
-								media="min-width: 1440px and max-width: 1919px">
-							<source srcset="../img/team-entry/team-entry(min-w1920).png" media="min-width: 1920px">
-							<img src="../img/team-entry/team-entry(min-w1440).png" alt="Image">
-						</picture>
-					</div>
-					<div class="person__description">
-						<div class="person__description-top-box">
-							<h2 class="person__title title-gradient">Oksana Kobzar</h2>
-							<div class="person__info">
-								<p class="person__position">Equity partner, Attorney-at-law</p>
-								<a href="mailto:kobzar@forstudy.space" class="person__email">kobzar@forstudy.space</a>
-								<a href="#" class="person__linkedIn">LinkedIn profile</a>
-							</div>
-						</div>
-						<div class="person__description-bottom-box">
-							<p class="person__paragraph">Oksana heads the practice of international trade and shipping. He
-								specializes in resolving disputes related to the purchase and sale of raw materials and
-								transportation of goods by sea.
+				<div class="contact-section-1__flex-wrapper">
+					<div class="contact-section-1__details-block contact-details">
+						<div class="contact-details__street-box">
+							<p class="contact-details__street">
+								Kyiv,
 								<br>
-								<br>
-								Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents,
-								container lines, as well as international banks and P&I clubs.
+								Mechnikova str, 14
 							</p>
-							<div class="person__text">
-								<h3 class="person__small-title">Education</h3>
-								<p class="person__paragraph">National University "Odessa Law Academy", Master of Law.</p>
+						</div>
+						<div class="contact-details__info-box">
+							<div class="contact-details__number-box">
+								<a href="tel:0800211927" class="contact-details__number">0800 211 927</a>
 							</div>
-							<div class="person__text">
-								<h3 class="person__small-title">Experience</h3>
-								<p class="person__paragraph">Her professional experience includes resolving disputes under
-									English
-									law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and
-									LMAA.
-									Danilo also represents the interests of clients in the state courts of Ukraine on similar
-									disputes, as well as in the ICAC and IAC at the CCI of Ukraine</p>
+							<div class="contact-details__email-box">
+								<a href="mailto:contact@forstudy.space"
+									class="contact-details__email">contact@forstudy.space</a>
 							</div>
 						</div>
+						<div class="contact-details__link-box">
+							<a href="#" class="contact-details__link">
+								<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_142710_1036)">
+										<path
+											d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+											fill="currentColor" />
+									</g>
+									<defs>
+										<clipPath id="clip0_142710_1036">
+											<rect width="38" height="38" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+								<p class="contact-details__text">Our page
+									<br>on facebook
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="contact-section-1__forms-block contact-forms">
+						<h2 class="contact-forms__title title-gradient">We would like to help you</h2>
+						<form action="./index.html" name="auth" method="get">
+							<div class="contact-forms__input-box">
+								<input name="First name" type="text" placeholder="Name">
+							</div>
+							<div class="contact-forms__input-box">
+								<textarea name="message" placeholder="Message"></textarea>
+							</div>
+							<h4 class="contact-forms__small-title">How to answer you?</h4>
+							<div class="contact-forms__input-box">
+								<input name="phone" type="tel" placeholder="Phone number">
+							</div>
+							<div class="contact-forms__input-box">
+								<input name="email" type="email" placeholder="Email">
+							</div>
+							<div class="contact-forms__button-box">
+								<button type="submit" class="button">Send message</button>
+							</div>
+
+						</form>
 					</div>
 				</div>
+
 			</div>
 		</section>
 	</main>
-	@@include('blocks/footer.html')
+	@@include('../html/blocks/footer.html')
 	<script src="./js/index.bundle.js"></script>
-
 </body>
 
 </html>
