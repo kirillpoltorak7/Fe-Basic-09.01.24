@@ -51,7 +51,7 @@
   display: none;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 559px) {
   .logo__breadcrumb {
     display: block;
   }
@@ -84,6 +84,8 @@
 
   .header__burger-wrapper {
     margin-right: 5px;
+  }
+  .header__burger-box {
     padding: 10px 7px;
     &:hover {
       background-color: rgba(245, 245, 250, 0.2);

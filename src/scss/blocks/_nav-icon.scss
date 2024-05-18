@@ -18,8 +18,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 57.5px;
-  right: 15px;
 }
 
 .nav-icon {
@@ -44,6 +42,20 @@
   border-radius: var(--radius);
   background-color: var(--color);
   transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.no-scroll .nav-icon::before {
+  background-color: red;
+}
+
+.no-scroll .nav-icon::after {
+  background-color: red;
+}
+
+.no-scroll .header__burger-box {
+  position: fixed;
+  top: 53.5742%;
+  right: 20px;
 }
 
 .nav-icon::before {
